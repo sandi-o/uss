@@ -26,7 +26,7 @@ class AuthController extends Controller
         
         $user = User::create($attributes);
 
-        return response()->json(['message' => $request], 201);
+        return response()->json(['message' => 'Successfully created user!'], 201);
     }
       
     public function login(LoginUser $request)
